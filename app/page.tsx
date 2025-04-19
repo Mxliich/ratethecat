@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <title>Rate The Cat</title>
       </Head>
 
