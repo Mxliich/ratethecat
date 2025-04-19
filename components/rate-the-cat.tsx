@@ -200,31 +200,31 @@ const funnyPhrases = [
   "I know where you live",
   "Btw i took so long to make this messages, if you care",
   "Whata fuck",
-  "His whiskers are wildin' tonight."
-  "That's my pizza delivery cat, yo."
-  "He's vibin' way too hard."
-  "Purrrr."
-  "He's begging for a timeout."
-  "Shake that booty."
-  "Who is this diva???"
-  "He's purring with an attitude."
-  "Move that fluffy butt!"
-  "She's smashing the dishes"
-  "He's out here acting unwise."
-  "No treats for that ass."
-  "Mrow mrow, who's the boss now?"
-  "Bounce bounce, kitty's loose!"
-  "He's giving devilish side-eye."
-  "He pmo fr fr."
-  "WOOOOAH :O"
-  ":O"
-  "I'm jealous of his nap schedule."
-  "Will he ever stop being silly?"
-  "Addicted to his chaos fr."
-  ">:3 evil kitty."
-  "He's on life support."
-  "No tip for that hairball move."
-  "I spent way too long on this list, lol."
+  "His whiskers are wildin' tonight.",
+  "That's my pizza delivery cat, yo.",
+  "He's vibin' way too hard.",
+  "Purrrr.",
+  "He's begging for a timeout.",
+  "Shake that booty.",
+  "Who is this diva???",
+  "He's purring with an attitude.",
+  "Move that fluffy butt!",
+  "She's smashing the dishes",
+  "He's out here acting unwise.",
+  "No treats for that ass.",
+  "Mrow mrow, who's the boss now?",
+  "Bounce bounce, kitty's loose!",
+  "He's giving devilish side-eye.",
+  "He pmo fr fr.",
+  "WOOOOAH :O",
+  ":O",
+  "I'm jealous of his nap schedule.",
+  "Will he ever stop being silly?",
+  "Addicted to his chaos fr.",
+  ">:3 evil kitty.",
+  "He's on life support.",
+  "No tip for that hairball move.",
+  "I spent way too long on this list, lol.",
   "i'm have feeling towards you",
   "i'm having crush on you.",
   "Hey Yara :D",
