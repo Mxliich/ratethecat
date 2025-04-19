@@ -11,7 +11,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Rate the Car",
+  title: "Rate the Cat",
   description: "Rate random cat memes",
   generator: 'v0.dev'
 }
