@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Outfit } from "next/font/google"
+import { Analytics } from '@vercel/analytics/react'
 import "./globals.css"
 
 const outfit = Outfit({
@@ -12,7 +13,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Rate the Car",
   description: "Rate random cat memes",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -22,7 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={outfit.className}>{children}</body>
+      <body className={outfit.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
