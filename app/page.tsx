@@ -3,6 +3,10 @@ import { BackgroundMusic } from "@/components/BackgroundMusic"
 
 export default function Home() {
   return (
+    <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    
     <main className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 bg-gradient-to-br from-pink-100 via-purple-100 to-pink-100 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
