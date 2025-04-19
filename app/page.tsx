@@ -1,4 +1,5 @@
 import RateTheCat from "@/components/rate-the-cat"
+import { BackgroundMusic } from "@/components/BackgroundMusic"
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <div className="w-full max-w-4xl relative z-10">
         <RateTheCat />
       </div>
+
+      <BackgroundMusic />
     </main>
   )
 }
