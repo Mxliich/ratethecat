@@ -238,6 +238,7 @@ const funnyPhrases = [
   "he's alcoholic btw",
   "Put that paw down.",
   "Guess what, your fired",
+  "Yo is this working?",
 
 ]
 
