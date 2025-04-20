@@ -468,7 +468,8 @@ export default function RateTheCat() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:gap-8 relative z-10">
+        <div className="flex flex-col lg:flex-row lg:gap-4 relative z-10">
+          
           {/* Left column - Image (full width on mobile, left side on desktop) */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <AnimatePresence mode="wait">
