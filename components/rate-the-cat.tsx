@@ -162,6 +162,7 @@ const catImages = [
 "https://i.ibb.co/5hzhrZSX/1.png",
 "https://i.ibb.co/XZsQCnFm/00piumcats2025-03-14-01-19-5251ba3578-17d4-4dd7-9a2e-5d4d14bd88df.jpg",
 "https://i.ibb.co/VcV6YZXY/0d8379ea718bf74001ad69ade66a7252.webp",
+  "https://i.ibb.co/67GZLthT/sports-memes-daily-2025-04-19-11-26-156df120e9-e564-407f-a7b6-e773eb710eaf.jpg",
 ]
 
 const funnyPhrases = [
