@@ -459,6 +459,15 @@ export default function RateTheCat() {
           Rate the Cat
         </motion.h1>
 
+        {/* Rating stats display */}
+        <div className="mb-6 text-center">
+          <div className="inline-block bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
+            <span className="text-lg font-medium text-gray-700">
+              ⭐ {currentStats.averageRating.toFixed(1)} ({currentStats.totalRatings} ratings)
+            </span>
+          </div>
+        </div>
+
         <div className="flex flex-col lg:flex-row lg:gap-8 relative z-10">
           {/* Left column - Image (full width on mobile, left side on desktop) */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
@@ -485,14 +494,36 @@ export default function RateTheCat() {
                   onLoad={() => setImageLoading(false)}
                   onError={() => setImageLoading(false)}
                 />
-
-                {/* Stats badge - Always show with random or user ratings */}
-                <div className="absolute top-3 right-3 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
-                  ⭐ {currentStats.averageRating.toFixed(1)} ({currentStats.totalRatings})
-                </div>
               </motion.div>
             </AnimatePresence>
           </div>
+          
+        <div className="flex flex-col lg:flex-row lg:gap-8 relative z-10">
+          {/* Left column - Image (full width on mobile, left side on desktop) */}
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentImageIndex}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                className="w-full aspect-square relative rounded-xl overflow-hidden shadow-lg border-4 border-white/80"
+              >
+                {imageLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                    <div className="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+                  </div>
+                )}
+                <Image
+                  src={catImages[currentImageIndex] || "/placeholder.svg"}
+                  alt="Cat to rate"
+                  fill
+                  className="object-cover"
+                  priority
+                  onLoad={() => setImageLoading(false)}
+                  onError={() => setImageLoading(false)}
+                />
 
           {/* Right column - Rating UI (full width on mobile, right side on desktop) */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
