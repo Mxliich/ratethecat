@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Head from "next/head";
 import RateTheCat from "@/components/rate-the-cat";
@@ -15,11 +15,16 @@ import {
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import { Separator } from '@/components/ui/separator';
-import logoPlaceholder from "@/public/placeholder-logo.png";
-import QRCode from 'qrcode.react';
-
+import teldaQr from "@/public/teldaqr.png";
+import vfQr from "@/public/vfqr.png";
+import teldacard from "@/public/teldacard.png"
+import vfmobile from "@/public/vfmobile.png"
 
 export default function Home() {
+  useEffect(() => {
+    console.log('Component mounted');
+    return () => console.log('Component unmounted');
+  }, []);
   const [showQrCode, setShowQrCode] = useState(false);
   const [selectedDonationMethod, setSelectedDonationMethod] = useState('');
 
@@ -49,16 +54,18 @@ export default function Home() {
           </DialogHeader>
             {showQrCode ? (
               <div className="flex flex-col items-center justify-center space-y-4">
-                <QRCode value={`https://example.com/donate/${selectedDonationMethod}`} size={256} level="H" />
+                 <Image src={selectedDonationMethod === 'telda' ? teldaQr: vfQr} alt="QR Code" width={256} height={256} />
                 <p className="text-center">
-                  Scan the QR code to proceed with your {selectedDonationMethod} donation.
-                </p>
+                 Scan the QR code to proceed with your {selectedDonationMethod} donation.
+                 </p>
                  <Button className='w-full' onClick={() => {
-                    window.open(`https://example.com/donate/${selectedDonationMethod}`, '_blank');
+                    window.open(selectedDonationMethod === 'telda' ? 'https://telda.me/mar0nly': 'https://vodafone.com', '_blank');
                 }}
                 >Donate</Button>
                 <Separator/>
-                <Button variant='outline' onClick={() => setShowQrCode(false)}>Go Back</Button>
+                <Button variant='outline' onClick={() => {
+                    setShowQrCode(false);
+                }}>Go Back</Button>
               </div>
             ) : (
               <div className="grid gap-4 py-4">
@@ -67,44 +74,33 @@ export default function Home() {
                     <div className="flex flex-col space-y-1">
                       <h3 className="font-medium leading-none">
                         Donate via PayPal
+                        telda
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Support us using Paypal.
+                      Support us using telda.
                       </p>
                     </div>
                     <Image
-                      src={logoPlaceholder}
-                      alt="Placeholder"
+                      src={teldacard}
+                      alt="telda"
                       width={64}
                       height={64}
                       className="rounded-md"
                     />
                   </div>
-                  <Button className="mt-4 w-full" onClick={() => handleDonateClick("paypal")}>
-                    Donate with Paypal
+                  <Button className="mt-4 w-full" onClick={() => handleDonateClick("telda")}>
+                    Donate with telda
                   </Button>
                 </div>
                 <div className="border rounded-md p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex flex-col space-y-1">
-                      <h3 className="font-medium leading-none">
-                        Buy us Coffee
-                      </h3>
-                      <p className="text-sm text-muted-foreground">
-                        Support us using buy us coffe.
-                      </p>
+                    <h3 className="font-medium leading-none">vodafone cash</h3>
+                    <p className="text-sm text-muted-foreground">Support us using vodafone cash.</p>
                     </div>
-                    <Image
-                      src={logoPlaceholder}
-                      alt="Placeholder"
-                      width={64}
-                      height={64}
-                      className="rounded-md"
-                    />
+                    <Image src={vfmobile} alt="vodafone" width={64} height={64} className="rounded-md" />
                   </div>
-                  <Button className="mt-4 w-full" onClick={() => handleDonateClick("coffee")}>
-                    Buy us Coffee
-                  </Button>
+                  <Button className="mt-4 w-full" onClick={() => handleDonateClick("vodafone")}>Donate with Vodafone Cash</Button>
                 </div>
               </div>
             )}
