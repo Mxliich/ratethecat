@@ -122,7 +122,7 @@ function App() {
                     <div className="border rounded-md p-4 hover:shadow-md transition-shadow">
                       <div className="flex items-center justify-between">
                         <div className="flex flex-col space-y-1">
-                          <h3 className="font-medium leading-none">
+                          <h3 className="font-medium leading-none text-black">
                             Telda
                           </h3>
                           <p className="text-sm text-gray-500">
@@ -131,6 +131,12 @@ function App() {
                         </div>
                         <div className="w-12 h-12 bg-gray-200 rounded-md"></div>
                       </div>
+                      <img
+        src="/teldacard.png"
+        alt="Telda Payment"
+        className="w-12 h-12 rounded-md object-contain"
+      />
+    </div>
                       
                       <button 
                         className="mt-4 w-full py-2 px-4 rounded-md font-medium text-white shadow-sm
@@ -145,11 +151,17 @@ function App() {
                     <div className="border rounded-md p-4 hover:shadow-md transition-shadow">
                       <div className="flex items-center justify-between">
                         <div className="flex flex-col space-y-1">
-                          <h3 className="font-medium leading-none">Vodafone Cash</h3>
+                          <h3 className="font-medium leading-none text-black">Vodafone Cash</h3>
                           <p className="text-sm text-gray-500">Support us using Vodafone Cash.</p>
                         </div>
                         <div className="w-12 h-12 bg-gray-200 rounded-md"></div>
                       </div>
+            <img
+        src="/vfmobile.png"
+        alt="Vodafone Mobile"
+        className="w-12 h-12 rounded-md object-contain"
+      />
+    </div>
                       
                       <button 
                         className="mt-4 w-full py-2 px-4 rounded-md font-medium text-white shadow-sm
