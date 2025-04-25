@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
@@ -77,7 +79,7 @@ function App() {
                     className="w-full py-2.5 px-4 rounded-md font-medium text-white shadow-sm
                              bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600
                              transition-all duration-200 ease-in-out"
-                    onClick={() => window.open(selectedDonationMethod === 'telda' ? 'https://telda.me/example' : 'https://vodafone.com', '_blank')}
+                    onClick={() => window.open(selectedDonationMethod === 'telda' ? 'https://telda.me/mar0nly' : 'https://vodafone.com', '_blank')}
                   >
                     Donate
                   </button>
