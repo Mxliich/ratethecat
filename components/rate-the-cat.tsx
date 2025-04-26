@@ -612,7 +612,7 @@ export default function RateTheCat() {
                 <p>
                   I was bored and thought, "Why not make a website to rate cat pics and memes?" <br />
                   So after a little effort, five cups of coffee, a budget of exactly $0 (yes, I'm broke), and ten
-                  arguments with the other developer… <br />
+                  hours of overthinking… <br />
                   We finally made it!
                   <br />
                   <br />
@@ -638,12 +638,10 @@ export default function RateTheCat() {
                   Have a Suggestion / Found a Bug? <br />
                   Contact us on Instagram and we'll try to fix it or add your genius idea if it's actually good. <br />
                   <br />
-                  Our beautiful dev queen: <a href="https://instagram.com/loyalyaraa/">@loyalyaraa</a>
-                  <br />
                   The nerdy developer: <a href="https://instagram.com/mxliich/">@mxliich</a> <br />
                   <br />
                   If the site breaks, we'll try our best to fix it… <br />
-                  But like, sometimes we're lazy. (Especially @mxliich, btw. )<br />
+                  But like, sometimes we're lazy. (Especially on weekend days, btw. )<br />
                   <br />
                 </p>
                 <p>
